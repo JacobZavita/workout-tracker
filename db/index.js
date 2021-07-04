@@ -1,4 +1,4 @@
-module.expoert = require('mongoose').connect('mongodb://localhost/workouttrackerdb', {
+module.expoert = require('mongoose').connect('mongodb://localhost/workout', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
