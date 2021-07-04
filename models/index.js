@@ -1,3 +1,4 @@
 module.exports = {
-  Exercise: require('./Exercise')
+  Exercise: require('./Exercise'),
+  User: require('./User')
 }
