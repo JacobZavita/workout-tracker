@@ -17,7 +17,7 @@ router.post('users/register', (req, res) => {
 // })
 
 // GET all user
-router.get('users', (req, res) => User.find()
+router.get('/users', (req, res) => User.find()
   .then(user=> res.json(user))
   .catch(err => console.log(err)))
 
@@ -30,7 +30,7 @@ router.put('/users', (req, res) => User.findByIdAndUpdate(req.user._id, { $set: 
     .catch(err => console.log(err)))
 
 // DELETE one user
-router.user('/users', (req, res) => User.findByIdAndDelete(req.user._id)
+router.delete('/users', (req, res) => User.findByIdAndDelete(req.user._id)
   .then(() => res.sendStatus(200))
   .catch(err => console.log(err)))
 
