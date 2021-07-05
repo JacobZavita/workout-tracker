@@ -1,14 +1,5 @@
 const { model, Schema } = require('mongoose')
 
-// const Exercise = new Schema({
-//   type: String,
-//   name: String,
-//   duration: Number,
-//   weight: Number,
-//   reps: Number,
-//   sets: Number
-// })
-
 const Exercise = new Schema({
   day: {
     type: Date,
@@ -48,6 +39,10 @@ const Exercise = new Schema({
   }
 })
 
-
+Exercise.virtual("totalDuration").get(function () {
+  return this.exercises.reduce((total, exercise) => {
+    return total + exercise.duration
+  }, 0)
+})
 
 module.exports = model('Exercise', Exercise)
