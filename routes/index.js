@@ -1,6 +1,6 @@
 const router = require('express').Router()
 
 router.use('/api', require('./exerciseRoutes'))
-router.use('/api', require('./userRoutes'))
+router.use(require('./htmlRoutes'))
 
 module.exports = router

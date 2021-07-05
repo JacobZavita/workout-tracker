@@ -11,7 +11,7 @@ const { model, Schema } = require('mongoose')
 
 const Exercise = new Schema({
   day: {
-    type: Data,
+    type: Date,
     default: () => new Date()
   },
   exercises: [

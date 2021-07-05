@@ -11,6 +11,13 @@ router.get('/exercises/:id', (req, res) => Exercise.findById(req.params.id)
     .then(exercise => res.json(exercise))
     .catch(err => console.log(err)))
 
+// GET with range
+router.get('/exercises/range', (req, res) => {
+    Exercise.find().limit(7)
+    .then(exercises => res.json(exercises))
+    .catch(err => console.log(err))
+})
+
 // POST one exercise
 router.post('/exercises', (req, res) => Exercise.create(req.body)
     .then(exercise => res.json(exercise))
