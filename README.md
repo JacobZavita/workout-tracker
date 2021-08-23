@@ -1,5 +1,5 @@
 # workout-tracker
-Github Repo: https://github.com/alwayssmellitfirst/workout-tracker
+Github Repo: https://github.com/JacobZavita/workout-tracker
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
 This allows a user to track their cardio and resistance workouts over the last seven days.
