@@ -22,4 +22,4 @@ Contributors: Jacob Zavita - alwayssmellitfirst
 # Tests
 The following is needed to test the project: run node server.js in CLI to test it out.
 # Questions
-If you have questions, suggestions, or ideas about the repo, open an issue or contact https://github.com/alwayssmellitfirst or email jacobzavita@gmail.com
+If you have questions, suggestions, or ideas about the repo, open an issue or contact https://github.com/JacobZavita or email jacobzavita@gmail.com
